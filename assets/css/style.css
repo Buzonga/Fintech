@@ -1,0 +1,128 @@
+:root {
+    --color-xereus: #471f5f;
+    --color-genestealer: #7761ab;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: start;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20vh;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form-floating {
+    transition-delay: 0.2s;
+    min-height: 50px;
+    max-height: 100%;
+}
+
+.form-control {
+    transition: .2s;
+    height: 100%;
+}
+
+.form-control:focus {
+    border-color: var(--color-xereus);
+    box-shadow: 0 0 0 0.2rem rgba(119, 97, 171, 0.2);
+}
+
+.row {
+    gap: 10px;
+    padding-inline: 12px;
+}
+.col{
+    padding: 0px;
+}
+
+
+input:hover {
+    border-color: #8a8a8a;
+}
+
+.btn-primary {
+    background-color: #471f5f;
+    border-color: #471f5f;
+    height: 6vh;
+    min-height: 50px;
+    --bs-btn-hover-bg: var(--color-genestealer);
+    --bs-btn-active-bg: var(--color-genestealer);
+    --bs-btn-active-border-color: var(--color-genestealer);
+    --bs-btn-hover-border-color: var(--color-genestealer);   
+}
+
+.btn-primary:active {
+    --bs-btn-border-radius: var(--bs-border-radius);
+}
+
+.d-grid:active {
+    background-color: #7761ab;
+    border-color: #7761ab;
+}
+
+
+
+h1,
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #471f5f;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+@media(max-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .col {
+        flex-wrap: wrap;
+        height: 100%;
+        min-width: 205px;
+    }
+
+    .row {
+        row-gap: 0px;
+    }
+
+}
+
