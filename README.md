@@ -1,1 +1,3 @@
-# Fintech [fintech_uml.pdf] (https://github.com/user-attachments/files/17549819/fintech_uml.pdf)
+# Fintech 
+
+![image](https://github.com/user-attachments/assets/cdbf1382-14b2-4e7a-bf2f-841f91fe35e3)
