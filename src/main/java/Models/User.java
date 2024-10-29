@@ -4,10 +4,10 @@ import java.util.Date;
 import java.util.List;
 
 public class User {
-    private String id;
+    private String idUser;
     private String email;
     private String username;
-    private String password;
+    private String psw;
     private String picture;
     private Date createDate;
     private double balance;
@@ -26,7 +26,7 @@ public class User {
     }
 
     public String getId() {
-        return this.id;
+        return this.idUser;
     }
 
     public String getPicture() {
